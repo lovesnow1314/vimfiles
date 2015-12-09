@@ -1,62 +1,50 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Vimfiles : Vim files by Lucas Caton ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Vimfiles</title>
+    <meta charset="UTF-8">
+    <title>Vimfiles by lucascaton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Vimfiles</h1>
+      <h2 class="project-tagline">Vim files by Lucas Caton </h2>
+      <a href="https://github.com/lucascaton/vimfiles" class="btn">View on GitHub</a>
+      <a href="https://github.com/lucascaton/vimfiles/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/lucascaton/vimfiles/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/lucascaton/vimfiles">View on GitHub</a>
-
-          <h1 id="project_title">Vimfiles</h1>
-          <h2 id="project_tagline">Vim files by Lucas Caton </h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/lucascaton/vimfiles/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/lucascaton/vimfiles/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
+    <section class="main-content">
+      <h1>
 <a id="vimfiles" class="anchor" href="#vimfiles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vimfiles</h1>
 
 <p><strong>Vimfiles</strong> are configuration files for the Vim editor. It includes editor preferences, colorscheme, font definitions, plugins, custom functions and more.</p>
 
-<p><strong>This project is my personal Vimfiles</strong>. Feel free to send me suggestions through the <a href="https://github.com/lucascaton/vimfiles/issues/new">issues page</a> or to send me improvements through the <a href="https://github.com/lucascaton/vimfiles/pulls">Pull Requests page</a>.</p>
+<p><strong>This project is my personal Vimfiles</strong>. Feel free to send me suggestions / problems through the <a href="https://github.com/lucascaton/vimfiles/issues/new">issues page</a> or you can contribute by sending improvements through the <a href="https://github.com/lucascaton/vimfiles/pulls">Pull Requests page</a>.</p>
 
 <h2>
-<a id="how-to-use-these-vim-configs" class="anchor" href="#how-to-use-these-vim-configs" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use these vim configs</h2>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use?</h2>
 
 <p>Clone this repository into your home directory as <code>~/.vim</code> and then install the plugins. Such as:</p>
 
 <pre><code>git clone git://github.com/lucascaton/vimfiles.git ~/.vim
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ln -s ~/.vim/vimrc ~/.vimrc
-cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
-</code></pre>
-
-<p>In order to install / update the plugins, start vim and then run:</p>
-
-<pre><code>:PluginInstall
+vim +PluginInstall +qall
 </code></pre>
 
 <p><strong>Optional:</strong></p>
 
-<p>Install jshint, in order to review your javascript files:</p>
+<p>(OS X only) Copy the Monaco font:</p>
+
+<pre><code>cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
+</code></pre>
+
+<p>Install jshint, in order to review your JavaScript code:</p>
 
 <pre><code>sudo npm install -g jshint
 </code></pre>
@@ -98,7 +86,7 @@ cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
 <tbody>
 <tr>
 <td align="left"><a href="https://github.com/rking/ag.vim">Ag.vim</a></td>
-<td align="left">Vim plugin for the_silver_searcher, 'ag', a replacement for the Perl module / CLI script 'ack'</td>
+<td align="left">Plugin for ag (the_silver_searcher)</td>
 <td align="left"></td>
 </tr>
 <tr>
@@ -114,7 +102,12 @@ cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
 <tr>
 <td align="left"><a href="https://github.com/kien/ctrlp.vim">CtrlP</a></td>
 <td align="left">Full path fuzzy file, buffer, mru and tag finder</td>
-<td align="left"><a href="http://kien.github.com/ctrlp.vim/">Website</a></td>
+<td align="left"><a href="http://goo.gl/nUQ1lA">Website</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/ekalinin/Dockerfile.vim">Dockerfile.vim</a></td>
+<td align="left">Vim syntax file &amp; snippets for Docker's Dockerfile</td>
+<td align="left"></td>
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/int3/vim-extradite">Extradite</a></td>
@@ -143,23 +136,23 @@ cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/danro/rename.vim">Rename</a></td>
-<td align="left">A command and function that basically does a ":saveas " then removes the old filename on the disk</td>
+<td align="left">Basically does a ":saveas " then removes the old filename</td>
 <td align="left"></td>
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/gorkunov/smartpairs.vim">Smartpairs</a></td>
-<td align="left">Fantastic selection - allows you to forget about difficult keys combination like vi{ or va"</td>
+<td align="left">Fantastic selection, replaces hard keys combination like vi{ or va"</td>
 <td align="left"></td>
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/msanders/snipmate.vim">Snipmate</a></td>
-<td align="left">Aims to be a concise Vim script that implements some of TextMate's snippets features in Vim</td>
+<td align="left">Implements some of TextMate's snippets</td>
 <td align="left"></td>
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/rstacruz/sparkup">Sparkup (Zen-coding)</a></td>
 <td align="left">A parser for a condensed HTML format</td>
-<td align="left"><a href="http://code.google.com/p/zen-coding/">Zzen coding</a></td>
+<td align="left"><a href="http://goo.gl/E4BVWd">Zen coding</a></td>
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/scrooloose/syntastic">Syntastic</a></td>
@@ -173,13 +166,13 @@ cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/tomtom/tcomment_vim">Tcomment</a></td>
-<td align="left">An extensible &amp; universal comment vim-plugin that also handles embedded filetypes</td>
+<td align="left">An extensible &amp; universal comment vim-plugin</td>
 <td align="left"></td>
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/tpope/vim-abolish">Vim Abolish</a></td>
-<td align="left">Easily search for, substitute, and abbreviate multiple variants of a word</td>
-<td align="left"><a href="http://vimcasts.org/episodes/supercharged-substitution-with-subvert/">Vim Casts</a></td>
+<td align="left">Easily search for, substitute, and abbreviate variants of a word</td>
+<td align="left"><a href="http://goo.gl/CsfUJ6">Vim Casts</a></td>
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/bling/vim-airline">Vim Airline</a></td>
@@ -198,7 +191,12 @@ cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/tpope/vim-endwise">Vim Endwise</a></td>
-<td align="left">Wisely add "end" in ruby, endfunction/endif/more in Vim script, etc</td>
+<td align="left">Wisely add "end" in ruby</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/airblade/vim-gitgutter">Vim Gitgutter</a></td>
+<td align="left">Shows a git diff in the gutter (sign column)</td>
 <td align="left"></td>
 </tr>
 <tr>
@@ -208,7 +206,7 @@ cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
 </tr>
 <tr>
 <td align="left"><a href="https://github.com/henrik/vim-ruby-runner">Vim Ruby Runner</a></td>
-<td align="left">Execute Ruby into an output buffer, similar to ⌘R in TextMate</td>
+<td align="left">Execute Ruby into an output buffer</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -221,7 +219,7 @@ cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
 
 <ul>
 <li>
-<a href="http://code.google.com/p/macvim/downloads/list">Macvim</a> (Mac OS X)</li>
+<a href="https://github.com/macvim-dev/macvim/releases">Macvim</a> (Mac OS X)</li>
 <li>
 <a href="https://apps.ubuntu.com/cat/applications/vim-gnome/">gVim</a> (Ubuntu Linux)</li>
 </ul>
@@ -240,6 +238,11 @@ cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
 <li><a href="http://www.viemu.com/a-why-vi-vim.html">Why, oh WHY, do those #?@! nutheads use vi?</a></li>
 <li><a href="http://www.swaroopch.com/notes/Vim">Byte of Vim</a></li>
 </ul>
+
+<h2>
+<a id="other-dotfiles" class="anchor" href="#other-dotfiles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other dotfiles</h2>
+
+<p>You can find my dotfiles here: <a href="https://github.com/lucascaton/dotfiles">lucascaton/dotfiles</a>.</p>
 
 <h2>
 <a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
@@ -263,18 +266,15 @@ cp ~/.vim/fonts/Monaco+for+Powerline.otf ~/Library/Fonts/
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 
 <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Vimfiles maintained by <a href="https://github.com/lucascaton">lucascaton</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/lucascaton/vimfiles">Vimfiles</a> is maintained by <a href="https://github.com/lucascaton">lucascaton</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
