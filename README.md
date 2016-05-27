@@ -64,6 +64,7 @@ These are my favorite fonts:
 | [Vim Gitgutter](https://github.com/airblade/vim-gitgutter)          | Shows a git diff in the gutter (sign column)                        |                                    |
 | [Vim Rails](https://github.com/tpope/vim-rails)                     | Ruby on Rails power tools                                           |                                    |
 | [Vim Ruby Runner](https://github.com/henrik/vim-ruby-runner)        | Execute Ruby into an output buffer                                  |                                    |
+| [Vim Javascript](https://github.com/henrik/vim-ruby-runner)        | Execute Ruby into an output buffer                                  |                                    |
 
 ## Vim in a GUI
 
